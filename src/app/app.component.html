@@ -1,0 +1,18 @@
+<button
+  xml-e-sign
+  mat-raised-button
+  [isNeedDownloadFile]="true"
+  (click)="openSignDialog1()"
+  (successResult)="getSignedXML($event)"
+  (failedResult)="getSignError($event)">
+  Sign 1
+</button>
+
+<button
+  xml-e-sign
+  mat-raised-button
+  (click)="openSignDialog2()"
+  (successResult)="getSignedXML($event)"
+  (failedResult)="getSignError($event)">
+  Sign 2
+</button>
